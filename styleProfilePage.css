@@ -1,0 +1,400 @@
+
+/*------  Parent Container that house all subcontainers ------------*/
+#Base_container{
+    width: 950px;
+    height: 500px;   
+    background-color: rgb(253, 251, 250);
+}
+
+#innerBase_container{
+    width: 950px;
+    height: 500px;   
+    background-color: rgb(253, 251, 250);
+    display:flex;
+    flex-direction: row;
+}
+
+/*----------    main top container ---------------*/
+.maintop {
+    flex: 1;
+    vertical-align: top;
+    height: 60px;     
+}
+
+/*---------------------------------------------*/
+/*----------- Top Navigation Bar---------------*/
+.nav{
+    padding: 20px;
+    width: 786px;
+    height: 20px;
+    background-color: rgb(75, 74, 74);
+
+    display: inline-block;  
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    padding-left: 150px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;  
+    list-style: none;   
+    padding: 10px;
+    color: ivory;
+}
+ac {    
+    font-size: 13px;
+    color:ivory;
+    padding-left: 8px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+.active {
+    font-weight: bold;
+    color:ivory;   
+}
+.text-properties  {  
+    font-weight: lighter;  
+    font-size: 15px;
+    color:ivory;
+    padding-left: 8px;
+    padding-right: 5px;
+    text-decoration: none;
+}
+
+.nav-title {
+    font-weight: lighter;
+    font-size: 27px;
+    text-align: left;
+    color:ivory;
+    text-align: bottom;   
+}
+
+.btn {
+    font-style: normal;
+    height: 30px;
+    width: 90px;
+    font-size: 17px;
+    text-align: left;
+    color:ivory;
+    background-color: rgb(31, 174, 209);
+    text-align: bottom;
+    box-shadow: 2px 2px black;  
+}
+.btn_spacing {
+    padding-left: 240px; 
+}
+
+
+
+
+
+
+/*----  Class 'mainbottom' holds 'bottom_SubContainer' --- */
+.mainbottom{ 
+    width: 950px;
+    background-color: rgb(245, 241, 241);
+    border: 3px solid black;
+}
+
+/*--------- Main Bottom Container  ----------*/
+.bottom_SubContainer{
+    width: 950px;
+    height: 1400pm;   
+    background-color: rgb(245, 241, 241);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*--------- Left Bottom Container  ----------*/
+.leftColumn {
+
+    margin: 10px; 
+    width: 450px;
+    justify-content: space-between; 
+    border: 3px solid black;
+    margin: 5px;
+}
+.leftcolumcontainer {          
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*-------  User Card Container -------*/
+.UserCardcontainer {
+    display: flex;
+    flex-direction: column;
+    height: 310px;
+    width: 400px;
+    margin: 10px;
+    padding: 10; 
+    margin-top: 20px;
+}
+
+.flexrow1 {
+    height: 100px;
+    width: 400px; 
+    flex: 1;
+    background-color: rgb(77, 188, 216);
+    border-right: 2px solid rgb(151, 147, 147);
+}
+.flexrow2 {
+    width: 398px; 
+    flex: 3;
+    border-left: 2px solid rgb(151, 147, 147);
+    border-right: 2px solid rgb(151, 147, 147);
+    border-bottom: 2px solid rgb(151, 147, 147);
+    align-content: flex-start; 
+    background-color: rgb(253, 251, 250);
+
+}
+.userpict{
+    width: 400px;  
+    position: absolute;
+    left: inherit;
+    top: 120px;
+    margin-left: 20px;
+}
+
+#name_format {
+    font-size: 38px;
+    padding-top: 30px;
+    margin-left: 10px;
+}
+.iconsFlexRow{ 
+    display: flex;
+    flex-direction: row;
+    margin-top: 2px;
+}
+.icons{ 
+    padding-top: 10px;
+    margin-left: 10px;
+    display: inline-block;
+}
+#city {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-top: 8px;
+    margin-left: 10px;
+}
+.innerText {
+    padding-top: 5px;
+    margin-left: 10px;
+}
+#profile a {
+    font-size: 20 px;
+    color: rgb(41, 82, 172);
+    display: inline-block;
+    vertical-align: top;
+    text-decoration-line: underline;
+    padding-top: 8px;
+    margin-left: 7px;
+}
+
+/*-------  Education Container -------*/
+.educationContainer {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin: 10px;
+}
+.educationTopBar {
+    height: 40px;
+    width: 400px; 
+    background-color: rgb(75, 74, 74);
+    border-right: 2px solid rgb(151, 147, 147);
+}
+.edu-title {
+    font-weight: lighter;
+    font-size: 17px;
+    color:ivory;
+    vertical-align: -webkit-baseline-middle; 
+    margin-left: 15px;
+    padding-top: 10px;
+}
+.edu_textProgramTitle {
+    font-weight: bold;
+    font-size: 20px;
+    padding-top: 15px;
+    margin-left: 10px;
+}
+.dateColor {
+    font-weight: lighter;
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: 10px;
+    color:rgb(112, 112, 112);
+}
+.edu_textCategory {
+    font-size: 19px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+
+/*--------------------------------------------------------------*/
+/*-------  Connection Request Container (Upper Right Box)-------*/
+
+/*-------  Upper Right SubContainers -------*/
+.rightTopTitlebarContainer{/*Container holds top right title bar icon and text*/
+    display: flex;
+    flex-direction: row;
+    width: 250px;
+    vertical-align: top; 
+    background-color: rgb(75, 74, 74);
+    border-right: 2px solid rgb(151, 147, 147);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.Titletext { /*Top right title bar text*/
+    font-weight: lighter;
+    font-size: 17px;
+    color:ivory;
+    vertical-align: middle; 
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+/*-------  Top Right Lower Content's SubContainers -------*/
+.upperRight_LowerParentSubContainter{ /*Holds Full Row subcontainers */
+    display: flex;
+    flex-direction: column;
+    width: 248px; 
+    border-left: 2px solid rgb(151, 147, 147);
+    border-right: 2px solid rgb(151, 147, 147);
+    border-bottom: 2px solid rgb(151, 147, 147);
+    align-content: flex-start; 
+    background-color: rgb(253, 251, 250); 
+    margin-left: 15px;
+}
+
+.upperRight_FullRowContainer{ /*Contains Row's left and right subcontainers */
+    display: flex;
+    flex-direction: row; 
+    width: 300px;  
+}
+.innerLayer {
+    display: flex;
+    flex-direction: row;  
+}
+
+.RowRightside_SubContainer { /* Rightside of row  --> contain checkmark and X button*/
+    flex-direction: row; 
+    width: 198px;
+
+    justify-content: center;
+}
+.RowLeftside_SubContainer {/* Leftside of row  --> contain icon and name */
+    flex-direction: row; 
+    justify-content: space-around;
+    width: 198px;
+    display: inline-block;
+}
+
+.rowName { /*Top right title bar text*/
+    vertical-align: middle; 
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.viewMoreLink-properties  {   
+    width: 240px; 
+    height: 20px;
+    font-size: 17px;
+    color: rgb(41, 82, 172);
+    background-color: rgb(253, 251, 250); 
+    padding-left: 8px;
+    text-decoration: underline;
+    border: 2px solid rgb(151, 147, 147);
+    vertical-align: middle;
+    margin-left: 15px;
+}
+
+/*----------------------------------------------------------*/
+/*--------------- Right Column -----------------------------*/
+.rightColumn { /*Style for whole right colunm */
+    
+    margin: 10px;
+    width: 450px;
+    border: 3px solid black;
+    margin: 5px;
+}
+.rightcolumnTopcontainer {   /*Upper right container for connection requests box*/  
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+
+/*---------------- Icon Styles ------------*/ 
+#searchButton {
+    text-align: center; 
+    font-size: 120%;
+    font-weight: bold;
+    vertical-align: middle;
+    padding: 7px;
+    color: rgb(0, 209, 178);
+    border: 3px solid rgb(0, 209, 178);
+    height: 20px;
+    width: 100px;
+	background: rgb(238, 234, 234);
+	border-radius: 20px 20px;
+    margin: 10px;
+}
+
+.topTitleIcon {
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(75, 74, 74);
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+	background: rgb(192, 190, 190);
+	border-radius: 50px 50px;
+}
+.bottomTitleIcon {
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: rgb(75, 74, 74);
+    font-weight: bold;
+    height: 20px;
+    width: 50px;
+	background: rgb(192, 190, 190);
+	border-radius: 50px / 25px;
+}
+
+
+#textchanges {
+    vertical-align: top;
+	font-size: 25pt;   
+    font-weight: bold;
+}
+
+.contentIcon {
+    margin: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: ivory;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+	background: rgb(192, 190, 190);
+	border-radius: 50px 50px;
+}
+
+
+
+/*--------------------------------------------
+
+
+
+*/
